@@ -6,26 +6,37 @@ public class Swap {
 
 	public static void main(String[] args) {
 		
-		Scanner cs = new Scanner(System.in) ;
-		
-		System.out.println("Enter the value for A :");
-		
-		int a =cs.nextInt();
-		
-        System.out.println("Enter the value for B :");
-		
-		int b =cs.nextInt(); 
-		
-		a=b-a;
-		b=a+b;
-		
-		System.out.println("Value for A is :" + a);
-		
-		System.out.println("Value for B is :" + b);
-		
-		cs.close();
+			
+				System.out.println("Enter the first value:");
+				
+				Scanner sc = new Scanner(System.in);
+				
+				System.out.println("Enter the second value:");
+				
+				int a=sc.nextInt();
+				
+				int b=sc.nextInt();
+				
+				System.out.println("Before Swapping: "+"a="+a+" "+"b="+b);
+				
+                a=a+b;
+				
+				b=a-b;
+				
+				a=a-b;
+				
+				
+				System.out.println("After Swapping:   "+"a="+a+"b="+b);
+				
+				
+				
+				
+             sc.close();
+             
+			  }
+
 		
 
-	}
+	         }
 
-}
+
