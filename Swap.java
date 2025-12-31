@@ -14,23 +14,14 @@ public class Swap {
 		
         System.out.println("Enter the value for B :");
 		
-		int b =cs.nextInt();
+		int b =cs.nextInt(); 
 		
-         System.out.println("Enter the value for C :");
-		
-		int c =cs.nextInt();
-		
-		a=b;
-		b=c;
-		c=a;
+		a=b-a;
+		b=a+b;
 		
 		System.out.println("Value for A is :" + a);
 		
 		System.out.println("Value for B is :" + b);
-		
-		System.out.println("Value for C is :" + c);
-		
-		
 		
 		cs.close();
 		
